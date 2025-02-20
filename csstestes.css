@@ -1,1 +1,64 @@
+:root {
+    --branco: #fff;
+    --preto: #000;
+    --preto-tom2: #2a2a2a;
+    --tom1: #d05f4b;
+    --tom2: #d87b6b;
+    --tom3: #e0978a;
+    --tom4: #e8b2a9;
+    --tom5: #ecc0b8;
+    --tom6: #f1cec8;
+    --tom7: #f5dcd7;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--tom7);
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: var(--branco);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: var(--preto);
+    margin-bottom: 20px;
+}
+
+.dia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid var(--tom5);
+}
+
+.dia span {
+    font-size: 18px;
+    color: var(--preto-tom2);
+}
+
+.dia button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--preto);
+}
+
+.dia button:hover {
+    color: var(--tom1);
+}
